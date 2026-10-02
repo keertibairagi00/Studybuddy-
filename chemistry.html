@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Engineering Chemistry | StudyBuddy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+.subject-page{padding:54px 8% 80px;max-width:1280px;margin:auto}
+.note-hero{background:linear-gradient(135deg,#eeeaff,#fff1f7 55%,#e9f7ff);border:1px solid var(--line);border-radius:32px;padding:42px;display:flex;justify-content:space-between;gap:28px;align-items:flex-start;box-shadow:var(--shadow)}
+.note-icon{width:70px;height:70px;border-radius:22px;background:#fff;display:grid;place-items:center;font-size:34px;box-shadow:0 8px 22px #4b3a8b10;margin-bottom:18px}
+.note-code{display:inline-block;background:#27243d;color:#fff;border-radius:999px;padding:7px 12px;font-size:10px;font-weight:900;letter-spacing:.08em}
+.note-hero h1{font-size:clamp(38px,5vw,62px);margin:16px 0 10px}
+.note-hero p{max-width:720px;margin:0}
+.back-btn{background:#fff;border:1px solid var(--line);border-radius:13px;padding:11px 15px;font-weight:800;color:var(--primary);white-space:nowrap}
+.note-layout{display:grid;grid-template-columns:220px 1fr;gap:24px;margin-top:26px}
+.note-nav{position:sticky;top:85px;align-self:start;background:#fff;border:1px solid var(--line);border-radius:22px;padding:16px}
+.note-nav b{font-family:Poppins;display:block;margin-bottom:10px}
+.note-nav a{display:block;padding:10px;border-radius:10px;font-size:12px;font-weight:700;color:#68657b}
+.note-nav a:hover{background:#eeeaff;color:var(--primary)}
+.notes{display:grid;gap:18px}
+.note-unit{background:#fff;border:1px solid var(--line);border-radius:24px;padding:30px;box-shadow:0 8px 25px #4b3a8b08}
+.unit-head{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:12px}
+.unit-no{font-size:10px;font-weight:900;color:var(--primary);letter-spacing:.12em}
+.tag{font-size:10px;font-weight:800;padding:5px 9px;border-radius:999px;background:#fff8dc;color:#806000}
+.note-unit h2{font-size:29px;margin-bottom:10px}
+.lead{font-size:14px;margin-top:0}
+.note-unit h3{font-size:18px;margin:24px 0 9px}
+.note-unit ul{padding-left:20px}
+.note-unit li{margin:6px 0;color:#55536a}
+.formula,.example,.exam-tip{border-radius:16px;padding:16px 18px;margin:14px 0}
+.formula{background:#f2efff;border-left:4px solid var(--primary);font-weight:700}
+.example{background:#f4fbff;border-left:4px solid var(--blue)}
+.exam-tip{background:#fff8ea;border-left:4px solid var(--yellow)}
+.note-table{width:100%;border-collapse:collapse;margin:15px 0;font-size:13px;overflow:hidden;border-radius:12px}
+.note-table th,.note-table td{border:1px solid var(--line);padding:10px;text-align:left;vertical-align:top}
+.note-table th{background:#f5f2ff;font-family:Poppins}
+.qa{display:grid;gap:10px;margin-top:15px}
+.qa div{padding:13px 15px;background:#faf9fe;border:1px solid var(--line);border-radius:13px}
+.qa b{display:block;margin-bottom:3px}
+@media(max-width:800px){.subject-page{padding:30px 5% 60px}.note-hero{padding:28px;flex-direction:column}.note-layout{grid-template-columns:1fr}.note-nav{position:static;display:grid;grid-template-columns:repeat(2,1fr);gap:4px}.note-nav b{grid-column:1/-1}.note-unit{padding:23px}}
+@media(max-width:500px){.note-nav{grid-template-columns:1fr 1fr}.note-unit h2{font-size:24px}.note-table{font-size:11px}}
+</style>
+</head>
+<body>
+<header class="nav">
+<a class="brand" href="index.html"><span class="brand-icon">✦</span><span>Study<span>Buddy</span></span></a>
+<button class="menu" aria-label="Menu">☰</button>
+<nav><a href="index.html#home">Home</a><a href="index.html#subjects">Subjects</a><a href="index.html#resources">Resources</a><a href="index.html#pyqs">PYQs</a><a href="index.html#team">Team</a></nav>
+<a class="nav-cta" href="index.html#subjects">All Subjects →</a>
+</header>
+<main class="subject-page">
+<section class="note-hero">
+<div><div class="note-icon">🧪</div><span class="note-code">BT101</span>
+<h1>Engineering Chemistry</h1><p>Engineering chemistry notes covering water technology, fuels, corrosion, polymers and green chemistry.</p></div>
+<a class="back-btn" href="index.html#subjects">← Subjects</a>
+</section>
+<div class="note-layout">
+<aside class="note-nav"><b>Jump to Unit</b><a href="#unit-1">Unit 01 · Water</a><a href="#unit-2">Unit 02 · Fuel</a><a href="#unit-3">Unit 03 · Corrosion</a><a href="#unit-4">Unit 04 · Polymers</a><a href="#unit-5">Unit 05 · Green Chemistry</a></aside>
+<section class="notes">
+        <article class="note-unit" id="unit-1">
+          <div class="unit-head"><span class="unit-no">UNIT 01</span><span class="tag">CORE</span></div>
+          <h2>Water Technology</h2>
+          <p class="lead">Hardness, water treatment and boiler problems are common engineering-chemistry foundations.</p>
+          <h3>Hardness of water</h3><p>Hardness is the property that prevents water from forming lather readily with soap. It is mainly caused by dissolved calcium and magnesium salts. Temporary hardness is associated mainly with bicarbonates; permanent hardness is associated with sulphates and chlorides.</p><ul><li><b>Temporary hardness:</b> Ca(HCO₃)₂ and Mg(HCO₃)₂.</li><li><b>Permanent hardness:</b> CaSO₄, MgSO₄, CaCl₂ and MgCl₂.</li></ul>
+<h3>Important treatment methods</h3><p><b>Boiling:</b> removes temporary hardness by decomposing bicarbonates. <b>Zeolite process:</b> exchanges Ca²⁺/Mg²⁺ ions with Na⁺. <b>Ion-exchange process:</b> uses cation and anion exchange resins to produce demineralized water.</p>
+<div class='formula'>Hardness is commonly expressed as mg/L (or ppm) as CaCO₃.</div>
+<div class='exam-tip'><b>Exam tip:</b> Write the type of hardness, its cause, one example salt and the removal method in a table for a clear long answer.</div>
+        </article>
+        <article class="note-unit" id="unit-2">
+          <div class="unit-head"><span class="unit-no">UNIT 02</span><span class="tag">CORE</span></div>
+          <h2>Fuels &amp; Combustion</h2>
+          <p class="lead">Fuel chemistry connects calorific value, combustion and the practical performance of solid, liquid and gaseous fuels.</p>
+          <h3>Calorific value</h3><p>The calorific value is the heat released when a unit quantity of fuel burns completely. <b>Higher calorific value (HCV)</b> includes the latent heat of condensation of water vapour; <b>lower calorific value (LCV)</b> excludes it.</p>
+<h3>Complete vs incomplete combustion</h3><p>With sufficient oxygen, carbon tends to form CO₂. With insufficient oxygen, incomplete combustion can form CO and soot. Efficient combustion therefore requires appropriate air supply, mixing and temperature.</p>
+<div class='formula'>For a gaseous fuel, calorific value is often reported per unit volume; for solid and liquid fuels, it is commonly reported per unit mass.</div>
+<h3>Fuel characteristics</h3><ul><li>High calorific value</li><li>Moderate ignition temperature</li><li>Low moisture and ash for solid fuels</li><li>Easy storage, transport and controlled combustion</li></ul>
+        </article>
+        <article class="note-unit" id="unit-3">
+          <div class="unit-head"><span class="unit-no">UNIT 03</span><span class="tag">MATERIALS</span></div>
+          <h2>Corrosion &amp; Its Control</h2>
+          <p class="lead">Corrosion is the gradual deterioration of a material, usually a metal, due to chemical or electrochemical interaction with its environment.</p>
+          <h3>Electrochemical corrosion</h3><p>In an electrochemical cell, oxidation occurs at the anode and reduction occurs at the cathode. Metal atoms at the anodic region lose electrons and enter solution as ions.</p>
+<div class='formula'>Anode: M → Mⁿ⁺ + ne⁻<br>Cathode: reduction reaction consumes the electrons.</div>
+<h3>Methods of prevention</h3><ul><li><b>Barrier coatings:</b> paint, enamel, polymer or metallic coatings isolate the metal.</li><li><b>Galvanizing:</b> zinc coating protects iron/steel.</li><li><b>Cathodic protection:</b> the protected metal is made the cathode using a sacrificial anode or impressed current.</li><li><b>Alloying:</b> suitable alloying can improve corrosion resistance.</li></ul>
+<div class='exam-tip'><b>Remember:</b> corrosion involves oxidation of the metal; prevention works by interrupting the electrochemical process or isolating/protecting the metal.</div>
+        </article>
+        <article class="note-unit" id="unit-4">
+          <div class="unit-head"><span class="unit-no">UNIT 04</span><span class="tag">MATERIALS</span></div>
+          <h2>Polymers &amp; Engineering Materials</h2>
+          <p class="lead">Polymers are high-molecular-mass materials formed from repeating structural units called monomers.</p>
+          <h3>Types of polymerization</h3><p><b>Addition polymerization</b> joins unsaturated monomers without eliminating a small molecule. <b>Condensation polymerization</b> generally involves functional groups and may eliminate small molecules such as water or HCl.</p>
+<h3>Thermoplastics vs thermosetting polymers</h3><table class='note-table'><tr><th>Thermoplastics</th><th>Thermosetting</th></tr><tr><td>Soften on heating and can be reshaped.</td><td>Set permanently after curing and do not readily remelt.</td></tr><tr><td>Generally linear or branched chains.</td><td>Highly cross-linked network.</td></tr><tr><td>Examples: PVC, polyethylene.</td><td>Examples: Bakelite, melamine-formaldehyde.</td></tr></table>
+<h3>Applications</h3><p>PVC is used for pipes and cable insulation; polyethylene is used in packaging and containers; epoxy resins are widely used in adhesives, coatings and composites.</p>
+        </article>
+        <article class="note-unit" id="unit-5">
+          <div class="unit-head"><span class="unit-no">UNIT 05</span><span class="tag">ENVIRONMENT</span></div>
+          <h2>Green Chemistry &amp; Environmental Chemistry</h2>
+          <p class="lead">Green chemistry aims to reduce or eliminate hazardous substances and waste at the source rather than treating pollution after it is formed.</p>
+          <h3>Key ideas</h3><ul><li>Prevent waste instead of treating it after formation.</li><li>Prefer safer chemicals and safer reaction conditions.</li><li>Use renewable feedstocks where practical.</li><li>Improve atom economy and energy efficiency.</li><li>Design products that degrade into less harmful substances after use.</li></ul>
+<h3>Water pollution indicators</h3><p><b>BOD</b> is the oxygen required by microorganisms to biologically oxidize biodegradable organic matter. <b>COD</b> measures oxygen equivalent required for chemical oxidation of oxidizable substances and is generally faster to determine than BOD.</p>
+<div class='exam-tip'><b>Long-answer structure:</b> definition → principle → examples → engineering application → environmental benefit.</div>
+        </article></section>
+</div>
+</main>
+<footer><div class="brand"><span class="brand-icon">✦</span><span>Study<span>Buddy</span></span></div><p>Exam-ready resources for first-year students.</p><small>© 2026 StudyBuddy • Built with curiosity ✦</small></footer>
+<script src="script.js"></script>
+</body></html>

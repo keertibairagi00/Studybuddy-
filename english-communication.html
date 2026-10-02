@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>English for Communication | StudyBuddy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+.subject-page{padding:54px 8% 80px;max-width:1280px;margin:auto}
+.note-hero{background:linear-gradient(135deg,#eeeaff,#fff1f7 55%,#e9f7ff);border:1px solid var(--line);border-radius:32px;padding:42px;display:flex;justify-content:space-between;gap:28px;align-items:flex-start;box-shadow:var(--shadow)}
+.note-icon{width:70px;height:70px;border-radius:22px;background:#fff;display:grid;place-items:center;font-size:34px;box-shadow:0 8px 22px #4b3a8b10;margin-bottom:18px}
+.note-code{display:inline-block;background:#27243d;color:#fff;border-radius:999px;padding:7px 12px;font-size:10px;font-weight:900;letter-spacing:.08em}
+.note-hero h1{font-size:clamp(38px,5vw,62px);margin:16px 0 10px}
+.note-hero p{max-width:720px;margin:0}
+.back-btn{background:#fff;border:1px solid var(--line);border-radius:13px;padding:11px 15px;font-weight:800;color:var(--primary);white-space:nowrap}
+.note-layout{display:grid;grid-template-columns:220px 1fr;gap:24px;margin-top:26px}
+.note-nav{position:sticky;top:85px;align-self:start;background:#fff;border:1px solid var(--line);border-radius:22px;padding:16px}
+.note-nav b{font-family:Poppins;display:block;margin-bottom:10px}
+.note-nav a{display:block;padding:10px;border-radius:10px;font-size:12px;font-weight:700;color:#68657b}
+.note-nav a:hover{background:#eeeaff;color:var(--primary)}
+.notes{display:grid;gap:18px}
+.note-unit{background:#fff;border:1px solid var(--line);border-radius:24px;padding:30px;box-shadow:0 8px 25px #4b3a8b08}
+.unit-head{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:12px}
+.unit-no{font-size:10px;font-weight:900;color:var(--primary);letter-spacing:.12em}
+.tag{font-size:10px;font-weight:800;padding:5px 9px;border-radius:999px;background:#fff8dc;color:#806000}
+.note-unit h2{font-size:29px;margin-bottom:10px}
+.lead{font-size:14px;margin-top:0}
+.note-unit h3{font-size:18px;margin:24px 0 9px}
+.note-unit ul{padding-left:20px}
+.note-unit li{margin:6px 0;color:#55536a}
+.formula,.example,.exam-tip{border-radius:16px;padding:16px 18px;margin:14px 0}
+.formula{background:#f2efff;border-left:4px solid var(--primary);font-weight:700}
+.example{background:#f4fbff;border-left:4px solid var(--blue)}
+.exam-tip{background:#fff8ea;border-left:4px solid var(--yellow)}
+.note-table{width:100%;border-collapse:collapse;margin:15px 0;font-size:13px;overflow:hidden;border-radius:12px}
+.note-table th,.note-table td{border:1px solid var(--line);padding:10px;text-align:left;vertical-align:top}
+.note-table th{background:#f5f2ff;font-family:Poppins}
+.qa{display:grid;gap:10px;margin-top:15px}
+.qa div{padding:13px 15px;background:#faf9fe;border:1px solid var(--line);border-radius:13px}
+.qa b{display:block;margin-bottom:3px}
+@media(max-width:800px){.subject-page{padding:30px 5% 60px}.note-hero{padding:28px;flex-direction:column}.note-layout{grid-template-columns:1fr}.note-nav{position:static;display:grid;grid-template-columns:repeat(2,1fr);gap:4px}.note-nav b{grid-column:1/-1}.note-unit{padding:23px}}
+@media(max-width:500px){.note-nav{grid-template-columns:1fr 1fr}.note-unit h2{font-size:24px}.note-table{font-size:11px}}
+</style>
+</head>
+<body>
+<header class="nav">
+<a class="brand" href="index.html"><span class="brand-icon">✦</span><span>Study<span>Buddy</span></span></a>
+<button class="menu" aria-label="Menu">☰</button>
+<nav><a href="index.html#home">Home</a><a href="index.html#subjects">Subjects</a><a href="index.html#resources">Resources</a><a href="index.html#pyqs">PYQs</a><a href="index.html#team">Team</a></nav>
+<a class="nav-cta" href="index.html#subjects">All Subjects →</a>
+</header>
+<main class="subject-page">
+<section class="note-hero">
+<div><div class="note-icon">💬</div><span class="note-code">BT103</span>
+<h1>English for Communication</h1><p>Communication skills, barriers, professional writing, resumes, reports and presentation fundamentals.</p></div>
+<a class="back-btn" href="index.html#subjects">← Subjects</a>
+</section>
+<div class="note-layout">
+<aside class="note-nav"><b>Jump to Unit</b><a href="#unit-1">Unit 01 · Process</a><a href="#unit-2">Unit 02 · Barriers</a><a href="#unit-3">Unit 03 · Letters</a><a href="#unit-4">Unit 04 · Resume</a><a href="#unit-5">Unit 05 · Reports</a></aside>
+<section class="notes">
+        <article class="note-unit" id="unit-1">
+          <div class="unit-head"><span class="unit-no">UNIT 01</span><span class="tag">FOUNDATION</span></div>
+          <h2>Communication Process</h2>
+          <p class="lead">Communication is the systematic exchange of information, ideas or feelings between a sender and receiver.</p>
+          <h3>Elements</h3><p>The basic process includes sender, encoding, message, channel, receiver, decoding and feedback. Noise can interfere with any stage.</p>
+<h3>Types</h3><table class='note-table'><tr><th>Type</th><th>Meaning</th></tr><tr><td>Verbal</td><td>Uses spoken or written words.</td></tr><tr><td>Non-verbal</td><td>Uses gestures, posture, facial expressions and other cues.</td></tr><tr><td>Formal</td><td>Follows an organizational structure or official channel.</td></tr><tr><td>Informal</td><td>Occurs through casual or unofficial interaction.</td></tr></table>
+<div class='exam-tip'><b>Exam tip:</b> In a process diagram, show sender → encoding → message/channel → decoding → receiver, with feedback returning to the sender.</div>
+        </article>
+        <article class="note-unit" id="unit-2">
+          <div class="unit-head"><span class="unit-no">UNIT 02</span><span class="tag">SKILLS</span></div>
+          <h2>Barriers to Communication</h2>
+          <p class="lead">Communication barriers reduce clarity, accuracy or understanding between participants.</p>
+          <h3>Major barriers</h3><ul><li><b>Physical:</b> noise, distance or poor equipment.</li><li><b>Semantic:</b> ambiguous words, jargon or different meanings.</li><li><b>Psychological:</b> stress, assumptions, prejudice or lack of attention.</li><li><b>Organizational:</b> excessive hierarchy, unclear roles or poor information flow.</li></ul>
+<h3>How to improve</h3><p>Use simple language, listen actively, confirm important information, choose an appropriate channel and encourage feedback.</p>
+        </article>
+        <article class="note-unit" id="unit-3">
+          <div class="unit-head"><span class="unit-no">UNIT 03</span><span class="tag">WRITING</span></div>
+          <h2>Business Letters &amp; Professional Writing</h2>
+          <p class="lead">Professional writing should be clear, concise, accurate and appropriate for the reader and purpose.</p>
+          <h3>Common structure of a formal letter</h3><p>Sender details → date → receiver details → subject → salutation → body → complimentary close → signature/name.</p>
+<h3>Writing principles</h3><ul><li>State the purpose early.</li><li>Use short, logically ordered paragraphs.</li><li>Avoid unnecessary slang and repetition.</li><li>Check grammar, spelling, names and dates before sending.</li></ul>
+<div class='example'><b>Useful opening:</b> “I am writing to request…” / “This letter is regarding…” Use a direct opening that matches the purpose.</div>
+        </article>
+        <article class="note-unit" id="unit-4">
+          <div class="unit-head"><span class="unit-no">UNIT 04</span><span class="tag">PROFESSIONAL</span></div>
+          <h2>Resume &amp; Job Application</h2>
+          <p class="lead">A resume presents relevant education, skills, projects and experience in a concise professional format.</p>
+          <h3>Recommended sections</h3><ul><li>Name and professional contact details</li><li>Career objective or concise profile, when useful</li><li>Education</li><li>Technical and soft skills</li><li>Projects / internships / experience</li><li>Achievements, certifications or relevant activities</li></ul>
+<h3>Good practice</h3><p>Tailor the resume to the role, use action-oriented descriptions for projects and keep formatting consistent. Do not claim skills or experience you do not have.</p>
+<div class='exam-tip'><b>Exam tip:</b> Learn the format and be ready to write a sample resume for a fresh engineering student.</div>
+        </article>
+        <article class="note-unit" id="unit-5">
+          <div class="unit-head"><span class="unit-no">UNIT 05</span><span class="tag">REPORT</span></div>
+          <h2>Report Writing &amp; Presentation Skills</h2>
+          <p class="lead">A technical report communicates a problem, method, observations and conclusions in a structured form.</p>
+          <h3>Basic report structure</h3><p>Title → introduction/objective → methodology or procedure → observations/results → discussion → conclusion → references/appendix where required.</p>
+<h3>Presentation skills</h3><ul><li>Know the objective and audience.</li><li>Use a simple beginning, middle and conclusion.</li><li>Keep slides readable and avoid overcrowding them with text.</li><li>Speak clearly, maintain appropriate eye contact and manage time.</li></ul>
+<div class='qa'><div><b>Q: What makes a report effective?</b> Clear purpose, logical structure, accurate information and evidence-based conclusions.</div><div><b>Q: Why is feedback important?</b> It confirms whether the intended message was understood and allows correction of misunderstandings.</div></div>
+        </article></section>
+</div>
+</main>
+<footer><div class="brand"><span class="brand-icon">✦</span><span>Study<span>Buddy</span></span></div><p>Exam-ready resources for first-year students.</p><small>© 2026 StudyBuddy • Built with curiosity ✦</small></footer>
+<script src="script.js"></script>
+</body></html>

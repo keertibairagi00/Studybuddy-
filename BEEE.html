@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Basic Electrical &amp; Electronics Engineering | StudyBuddy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+.subject-page{padding:54px 8% 80px;max-width:1280px;margin:auto}
+.note-hero{background:linear-gradient(135deg,#eeeaff,#fff1f7 55%,#e9f7ff);border:1px solid var(--line);border-radius:32px;padding:42px;display:flex;justify-content:space-between;gap:28px;align-items:flex-start;box-shadow:var(--shadow)}
+.note-icon{width:70px;height:70px;border-radius:22px;background:#fff;display:grid;place-items:center;font-size:34px;box-shadow:0 8px 22px #4b3a8b10;margin-bottom:18px}
+.note-code{display:inline-block;background:#27243d;color:#fff;border-radius:999px;padding:7px 12px;font-size:10px;font-weight:900;letter-spacing:.08em}
+.note-hero h1{font-size:clamp(38px,5vw,62px);margin:16px 0 10px}
+.note-hero p{max-width:720px;margin:0}
+.back-btn{background:#fff;border:1px solid var(--line);border-radius:13px;padding:11px 15px;font-weight:800;color:var(--primary);white-space:nowrap}
+.note-layout{display:grid;grid-template-columns:220px 1fr;gap:24px;margin-top:26px}
+.note-nav{position:sticky;top:85px;align-self:start;background:#fff;border:1px solid var(--line);border-radius:22px;padding:16px}
+.note-nav b{font-family:Poppins;display:block;margin-bottom:10px}
+.note-nav a{display:block;padding:10px;border-radius:10px;font-size:12px;font-weight:700;color:#68657b}
+.note-nav a:hover{background:#eeeaff;color:var(--primary)}
+.notes{display:grid;gap:18px}
+.note-unit{background:#fff;border:1px solid var(--line);border-radius:24px;padding:30px;box-shadow:0 8px 25px #4b3a8b08}
+.unit-head{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:12px}
+.unit-no{font-size:10px;font-weight:900;color:var(--primary);letter-spacing:.12em}
+.tag{font-size:10px;font-weight:800;padding:5px 9px;border-radius:999px;background:#fff8dc;color:#806000}
+.note-unit h2{font-size:29px;margin-bottom:10px}
+.lead{font-size:14px;margin-top:0}
+.note-unit h3{font-size:18px;margin:24px 0 9px}
+.note-unit ul{padding-left:20px}
+.note-unit li{margin:6px 0;color:#55536a}
+.formula,.example,.exam-tip{border-radius:16px;padding:16px 18px;margin:14px 0}
+.formula{background:#f2efff;border-left:4px solid var(--primary);font-weight:700}
+.example{background:#f4fbff;border-left:4px solid var(--blue)}
+.exam-tip{background:#fff8ea;border-left:4px solid var(--yellow)}
+.note-table{width:100%;border-collapse:collapse;margin:15px 0;font-size:13px;overflow:hidden;border-radius:12px}
+.note-table th,.note-table td{border:1px solid var(--line);padding:10px;text-align:left;vertical-align:top}
+.note-table th{background:#f5f2ff;font-family:Poppins}
+.qa{display:grid;gap:10px;margin-top:15px}
+.qa div{padding:13px 15px;background:#faf9fe;border:1px solid var(--line);border-radius:13px}
+.qa b{display:block;margin-bottom:3px}
+@media(max-width:800px){.subject-page{padding:30px 5% 60px}.note-hero{padding:28px;flex-direction:column}.note-layout{grid-template-columns:1fr}.note-nav{position:static;display:grid;grid-template-columns:repeat(2,1fr);gap:4px}.note-nav b{grid-column:1/-1}.note-unit{padding:23px}}
+@media(max-width:500px){.note-nav{grid-template-columns:1fr 1fr}.note-unit h2{font-size:24px}.note-table{font-size:11px}}
+</style>
+</head>
+<body>
+<header class="nav">
+<a class="brand" href="index.html"><span class="brand-icon">✦</span><span>Study<span>Buddy</span></span></a>
+<button class="menu" aria-label="Menu">☰</button>
+<nav><a href="index.html#home">Home</a><a href="index.html#subjects">Subjects</a><a href="index.html#resources">Resources</a><a href="index.html#pyqs">PYQs</a><a href="index.html#team">Team</a></nav>
+<a class="nav-cta" href="index.html#subjects">All Subjects →</a>
+</header>
+<main class="subject-page">
+<section class="note-hero">
+<div><div class="note-icon">⚡</div><span class="note-code">BT104</span>
+<h1>Basic Electrical &amp; Electronics Engineering</h1><p>Core electrical and electronics notes: circuits, AC, transformers, motors and semiconductor basics.</p></div>
+<a class="back-btn" href="index.html#subjects">← Subjects</a>
+</section>
+<div class="note-layout">
+<aside class="note-nav"><b>Jump to Unit</b><a href="#unit-1">Unit 01 · DC Circuits</a><a href="#unit-2">Unit 02 · AC Circuits</a><a href="#unit-3">Unit 03 · Transformers</a><a href="#unit-4">Unit 04 · Motors</a><a href="#unit-5">Unit 05 · Diodes &amp; Transistors</a></aside>
+<section class="notes">
+        <article class="note-unit" id="unit-1">
+          <div class="unit-head"><span class="unit-no">UNIT 01</span><span class="tag">FOUNDATION</span></div>
+          <h2>DC Circuit Fundamentals</h2>
+          <p class="lead">Voltage, current, resistance and circuit laws are the foundation for analyzing electrical networks.</p>
+          <h3>Basic quantities</h3><ul><li><b>Current (I):</b> rate of flow of electric charge, measured in ampere.</li><li><b>Voltage (V):</b> electrical potential difference, measured in volt.</li><li><b>Resistance (R):</b> opposition to current, measured in ohm.</li><li><b>Power (P):</b> rate of electrical energy conversion, measured in watt.</li></ul>
+<div class='formula'>Ohm's law: V = IR<br>Power: P = VI = I²R = V²/R</div>
+<h3>Kirchhoff's laws</h3><p><b>KCL:</b> algebraic sum of currents at a node is zero; equivalently, total current entering a node equals total current leaving. <b>KVL:</b> algebraic sum of voltage changes around a closed loop is zero.</p>
+<div class='example'><b>Example:</b> If R = 6 Ω and V = 12 V, then I = V/R = 2 A and P = VI = 24 W.</div>
+        </article>
+        <article class="note-unit" id="unit-2">
+          <div class="unit-head"><span class="unit-no">UNIT 02</span><span class="tag">AC</span></div>
+          <h2>Alternating Current &amp; AC Circuits</h2>
+          <p class="lead">An alternating quantity changes magnitude and direction periodically. Sinusoidal AC is the most common waveform in power systems.</p>
+          <h3>Sinusoidal quantities</h3><p>A sinusoidal voltage may be represented as v(t)=Vₘ sin(ωt+φ), where Vₘ is peak value, ω is angular frequency and φ is phase angle.</p>
+<div class='formula'>ω = 2πf &nbsp;&nbsp; Vrms = Vₘ/√2 &nbsp;&nbsp; Irms = Iₘ/√2</div>
+<h3>R, L and C behaviour</h3><table class='note-table'><tr><th>Element</th><th>Reactance</th><th>Phase relation</th></tr><tr><td>Resistor R</td><td>R</td><td>V and I in phase</td></tr><tr><td>Inductor L</td><td>Xₗ = ωL</td><td>Current lags voltage by 90°</td></tr><tr><td>Capacitor C</td><td>Xc = 1/(ωC)</td><td>Current leads voltage by 90°</td></tr></table>
+        </article>
+        <article class="note-unit" id="unit-3">
+          <div class="unit-head"><span class="unit-no">UNIT 03</span><span class="tag">MACHINES</span></div>
+          <h2>Transformer</h2>
+          <p class="lead">A transformer transfers AC electrical energy between circuits through electromagnetic induction, normally without changing frequency.</p>
+          <h3>Working principle</h3><p>A changing current in the primary winding creates changing magnetic flux in the core. The changing flux links the secondary winding and induces an emf.</p>
+<div class='formula'>For an ideal transformer: V₂/V₁ = N₂/N₁ and I₂/I₁ = N₁/N₂.</div>
+<h3>Types</h3><ul><li><b>Step-up:</b> secondary turns greater than primary turns, so secondary voltage is higher.</li><li><b>Step-down:</b> secondary turns fewer than primary turns, so secondary voltage is lower.</li></ul>
+<h3>Losses</h3><p>Major losses include copper loss in windings and core losses such as hysteresis and eddy-current loss. Laminated cores reduce eddy-current loss.</p>
+        </article>
+        <article class="note-unit" id="unit-4">
+          <div class="unit-head"><span class="unit-no">UNIT 04</span><span class="tag">MACHINES</span></div>
+          <h2>Electrical Machines: DC &amp; Induction Motors</h2>
+          <p class="lead">Electric motors convert electrical energy into mechanical energy using electromagnetic effects.</p>
+          <h3>DC motor principle</h3><p>A current-carrying conductor placed in a magnetic field experiences a force. In a motor, the arrangement of conductors and commutation produces continuous torque.</p>
+<h3>Three-phase induction motor</h3><p>A three-phase stator supply creates a rotating magnetic field. This field induces currents in the rotor, producing torque. The rotor runs slightly below synchronous speed in normal operation.</p>
+<div class='formula'>Synchronous speed: Nₛ = 120f/P (rpm), where f is supply frequency and P is number of poles.</div>
+<div class='exam-tip'><b>Exam tip:</b> For motor questions, include principle, construction, working, applications and a neat labeled diagram.</div>
+        </article>
+        <article class="note-unit" id="unit-5">
+          <div class="unit-head"><span class="unit-no">UNIT 05</span><span class="tag">ELECTRONICS</span></div>
+          <h2>Basic Electronics</h2>
+          <p class="lead">Semiconductor devices control current and form the building blocks of electronic circuits.</p>
+          <h3>PN junction diode</h3><p>A diode primarily allows current in one direction. Forward bias reduces the depletion barrier and permits substantial conduction; reverse bias widens the depletion region and gives very small current until breakdown conditions.</p>
+<h3>Rectification</h3><p>A rectifier converts AC into unidirectional pulsating DC. Half-wave rectification uses one half-cycle; full-wave rectification uses both half-cycles and gives better utilization of the input waveform.</p>
+<h3>BJT basics</h3><p>A bipolar junction transistor has emitter, base and collector regions. In active operation it can be used for amplification; as a switch it is operated between cutoff and saturation.</p>
+        </article></section>
+</div>
+</main>
+<footer><div class="brand"><span class="brand-icon">✦</span><span>Study<span>Buddy</span></span></div><p>Exam-ready resources for first-year students.</p><small>© 2026 StudyBuddy • Built with curiosity ✦</small></footer>
+<script src="script.js"></script>
+</body></html>
