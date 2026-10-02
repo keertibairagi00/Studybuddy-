@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="StudyBuddy — simple, exam-ready notes for students.">
+  <title>StudyBuddy | Exam Ready Notes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="#home"><span>📚</span> Study<span>Buddy</span></a>
+    <button class="menu-btn" aria-label="Open menu">☰</button>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#subjects">Subjects</a>
+      <a href="#notes">Notes</a>
+      <a href="#pyq">PYQs</a>
+      <a href="#team">Our Team</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <div class="pill">✨ STUDY SMART • PREPARE BETTER</div>
+        <h1>Your <span>Exam-Ready</span><br>Study Buddy.</h1>
+        <p>Simple notes, important questions and quick revision material — made by students, for students.</p>
+        <div class="hero-buttons">
+          <a class="btn primary" href="#subjects">Explore Notes →</a>
+          <a class="btn secondary" href="#team">Meet the Team</a>
+        </div>
+        <div class="mini-stats">
+          <div><b>Easy</b><small>Explanations</small></div>
+          <div><b>Exam</b><small>Focused</small></div>
+          <div><b>Quick</b><small>Revision</small></div>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="blob"></div>
+        <div class="book-card">
+          <div class="book-icon">📖</div>
+          <h3>Today's Goal</h3>
+          <p>Learn • Revise • Repeat</p>
+          <div class="progress"><span></span></div>
+          <small>Keep going — you've got this! 💜</small>
+        </div>
+        <div class="floating-card one">📝 Important Questions</div>
+        <div class="floating-card two">⭐ Exam Ready</div>
+      </div>
+    </section>
+
+    <section class="section intro">
+      <div>
+        <div class="eyebrow">WHY STUDYBUDDY?</div>
+        <h2>Everything you need before the exam.</h2>
+      </div>
+      <p>StudyBuddy turns long and confusing topics into clean, easy-to-revise study material.</p>
+    </section>
+
+    <section id="subjects" class="section">
+      <div class="section-heading">
+        <div><div class="eyebrow">YOUR STUDY SPACE</div><h2>Choose a Subject</h2></div>
+        <span class="badge">Coming Soon: More subjects</span>
+      </div>
+      <div class="subject-grid">
+        <article class="subject-card purple"><div class="subject-icon">💻</div><h3>Data Structures</h3><p>Arrays, stacks, queues, trees & more.</p><button onclick="showTopic('Data Structures')">View Topics →</button></article>
+        <article class="subject-card pink"><div class="subject-icon">☕</div><h3>Java</h3><p>Basics, programs, OOP concepts & revision.</p><button onclick="showTopic('Java')">View Topics →</button></article>
+        <article class="subject-card blue"><div class="subject-icon">🌐</div><h3>HTML</h3><p>Tags, structure, forms, tables & projects.</p><button onclick="showTopic('HTML')">View Topics →</button></article>
+        <article class="subject-card yellow"><div class="subject-icon">⚡</div><h3>Digital Systems</h3><p>Logic, number systems, gates & circuits.</p><button onclick="showTopic('Digital Systems')">View Topics →</button></article>
+        <article class="subject-card green"><div class="subject-icon">🧠</div><h3>OOP</h3><p>Classes, objects, inheritance & polymorphism.</p><button onclick="showTopic('OOP')">View Topics →</button></article>
+        <article class="subject-card orange"><div class="subject-icon">📐</div><h3>Mathematics</h3><p>Formulas, methods and exam-focused practice.</p><button onclick="showTopic('Mathematics')">View Topics →</button></article>
+      </div>
+    </section>
+
+    <section id="notes" class="section notes-section">
+      <div class="section-heading">
+        <div><div class="eyebrow">EXAM READY</div><h2>Featured Notes</h2></div>
+        <div class="search"><span>🔍</span><input id="searchInput" type="search" placeholder="Search a topic..."></div>
+      </div>
+      <div id="notesGrid" class="notes-grid">
+        <article class="note-card" data-search="array data structures"><span class="mark">7 MARKS</span><h3>What is an Array?</h3><p>An array is a collection of elements of the same data type stored in continuous memory locations.</p><div class="note-footer"><span>📚 Data Structures</span><button onclick="openNote('Array')">Read Note</button></div></article>
+        <article class="note-card" data-search="java hello world basics"><span class="mark">BASICS</span><h3>Java: Hello World</h3><p>Understand the basic Java program structure, main method and output statement.</p><div class="note-footer"><span>☕ Java</span><button onclick="openNote('Java Hello World')">Read Note</button></div></article>
+        <article class="note-card" data-search="html boilerplate tags"><span class="mark">5 MARKS</span><h3>HTML Boilerplate</h3><p>Learn the basic structure of an HTML document and the purpose of common tags.</p><div class="note-footer"><span>🌐 HTML</span><button onclick="openNote('HTML Boilerplate')">Read Note</button></div></article>
+      </div>
+      <div id="noResults" class="no-results">No topic found. Try another search.</div>
+    </section>
+
+    <section id="pyq" class="section pyq">
+      <div class="pyq-box">
+        <div class="eyebrow">LAST-MINUTE REVISION</div>
+        <h2>🎯 Important Questions</h2>
+        <p>We’ll collect unit-wise questions and mark them as 2, 5, 7 or 14-mark answers so revision becomes faster.</p>
+        <div class="question-row"><span>01</span><b>Explain an array with its types and applications.</b><em>7 Marks</em></div>
+        <div class="question-row"><span>02</span><b>Write a Java program to print “Hello World”.</b><em>5 Marks</em></div>
+        <div class="question-row"><span>03</span><b>Explain the basic structure of an HTML document.</b><em>5 Marks</em></div>
+      </div>
+    </section>
+
+    <section id="team" class="section team-section">
+      <div class="eyebrow">BUILT TOGETHER</div>
+      <h2>Meet the StudyBuddy Team 💜</h2>
+      <p class="team-subtitle">Created with teamwork, notes and a lot of exam-season energy.</p>
+      <div class="team-grid">
+        <div class="person"><div class="avatar">K</div><h3>Keerti Bairagi</h3><p>Co-founder / Team</p></div>
+        <div class="person"><div class="avatar">S</div><h3>Shreya Patel</h3><p>Team</p></div>
+        <div class="person"><div class="avatar">S</div><h3>Shiva Parihar</h3><p>Team</p></div>
+        <div class="person"><div class="avatar">S</div><h3>Siddharth Yadav</h3><p>Team</p></div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h2>Study together. Grow together. 🚀</h2>
+      <p>StudyBuddy is just getting started.</p>
+      <a class="btn primary" href="#subjects">Start Studying</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="logo">📚 Study<span>Buddy</span></div>
+    <p>Exam-ready notes • Student-made • Student-friendly</p>
+    <p class="copyright">© 2026 StudyBuddy Team</p>
+  </footer>
+
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-box">
+      <button class="close" onclick="closeModal()">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
