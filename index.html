@@ -1,136 +1,87 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="StudyBuddy — simple, exam-ready notes for students.">
-  <title>StudyBuddy | Exam Ready Notes</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>StudyBuddy | First Year CSE</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="navbar">
-    <a class="logo" href="#home"><span>📚</span> Study<span>Buddy</span></a>
-    <button class="menu-btn" aria-label="Open menu">☰</button>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#subjects">Subjects</a>
-      <a href="#notes">Notes</a>
-      <a href="#pyq">PYQs</a>
-      <a href="#team">Our Team</a>
-    </nav>
-  </header>
+<header class="nav">
+<a class="brand" href="#home"><span class="brand-icon">✦</span><span>Study<span>Buddy</span></span></a>
+<button class="menu">☰</button>
+<nav><a href="#home">Home</a><a href="#subjects">Subjects</a><a href="#resources">Resources</a><a href="#pyqs">PYQs</a><a href="#team">Team</a></nav>
+<a class="nav-cta" href="#subjects">Start Studying →</a>
+</header>
 
-  <main>
-    <section id="home" class="hero">
-      <div class="hero-text">
-        <div class="pill">✨ STUDY SMART • PREPARE BETTER</div>
-        <h1>Your <span>Exam-Ready</span><br>Study Buddy.</h1>
-        <p>Simple notes, important questions and quick revision material — made by students, for students.</p>
-        <div class="hero-buttons">
-          <a class="btn primary" href="#subjects">Explore Notes →</a>
-          <a class="btn secondary" href="#team">Meet the Team</a>
-        </div>
-        <div class="mini-stats">
-          <div><b>Easy</b><small>Explanations</small></div>
-          <div><b>Exam</b><small>Focused</small></div>
-          <div><b>Quick</b><small>Revision</small></div>
-        </div>
-      </div>
-      <div class="hero-art">
-        <div class="blob"></div>
-        <div class="book-card">
-          <div class="book-icon">📖</div>
-          <h3>Today's Goal</h3>
-          <p>Learn • Revise • Repeat</p>
-          <div class="progress"><span></span></div>
-          <small>Keep going — you've got this! 💜</small>
-        </div>
-        <div class="floating-card one">📝 Important Questions</div>
-        <div class="floating-card two">⭐ Exam Ready</div>
-      </div>
-    </section>
+<main id="home">
+<section class="hero reveal">
+<div class="hero-copy">
+<div class="pill">✨ Made for 1st Year CSE students</div>
+<h1>Study smart.<br><span>Prepare better.</span></h1>
+<p>Exam-ready notes, high-priority topics, previous-year questions and focused revision resources — all in one friendly place.</p>
+<div class="hero-actions"><a class="btn primary" href="#subjects">Explore Subjects</a><a class="btn ghost" href="#resources">See Resources</a></div>
+<div class="mini-stats"><span>📚 Notes</span><span>🔥 Priority Topics</span><span>📄 PYQs</span></div>
+</div>
+<div class="hero-art"><div class="blob"></div><div class="desk-card"><div class="sticky">TODAY'S<br>GOAL ✨</div><div class="book"><b>STUDY</b><small>one topic at a time</small></div><div class="pencil">✎</div></div></div>
+</section>
 
-    <section class="section intro">
-      <div>
-        <div class="eyebrow">WHY STUDYBUDDY?</div>
-        <h2>Everything you need before the exam.</h2>
-      </div>
-      <p>StudyBuddy turns long and confusing topics into clean, easy-to-revise study material.</p>
-    </section>
+<section class="quick reveal" id="resources">
+<div class="quick-card"><b>📝 Notes</b><span>Simple, exam-ready explanations</span></div>
+<div class="quick-card hot"><b>🔥 High Priority</b><span>Topics to prepare first</span></div>
+<div class="quick-card"><b>📄 PYQs</b><span>Previous-year paper collection</span></div>
+<div class="quick-card"><b>🔁 Repeated</b><span>Frequently asked questions</span></div>
+</section>
 
-    <section id="subjects" class="section">
-      <div class="section-heading">
-        <div><div class="eyebrow">YOUR STUDY SPACE</div><h2>Choose a Subject</h2></div>
-        <span class="badge">Coming Soon: More subjects</span>
-      </div>
-      <div class="subject-grid">
-        <article class="subject-card purple"><div class="subject-icon">💻</div><h3>Data Structures</h3><p>Arrays, stacks, queues, trees & more.</p><button onclick="showTopic('Data Structures')">View Topics →</button></article>
-        <article class="subject-card pink"><div class="subject-icon">☕</div><h3>Java</h3><p>Basics, programs, OOP concepts & revision.</p><button onclick="showTopic('Java')">View Topics →</button></article>
-        <article class="subject-card blue"><div class="subject-icon">🌐</div><h3>HTML</h3><p>Tags, structure, forms, tables & projects.</p><button onclick="showTopic('HTML')">View Topics →</button></article>
-        <article class="subject-card yellow"><div class="subject-icon">⚡</div><h3>Digital Systems</h3><p>Logic, number systems, gates & circuits.</p><button onclick="showTopic('Digital Systems')">View Topics →</button></article>
-        <article class="subject-card green"><div class="subject-icon">🧠</div><h3>OOP</h3><p>Classes, objects, inheritance & polymorphism.</p><button onclick="showTopic('OOP')">View Topics →</button></article>
-        <article class="subject-card orange"><div class="subject-icon">📐</div><h3>Mathematics</h3><p>Formulas, methods and exam-focused practice.</p><button onclick="showTopic('Mathematics')">View Topics →</button></article>
-      </div>
-    </section>
+<section class="section reveal" id="subjects">
+<div class="section-head"><div><span class="eyebrow">EXPLORE</span><h2>Your first-semester subjects</h2></div><span class="small-note">More subjects can be added anytime ✦</span></div>
+<div class="subject-grid">
+<article class="subject"><div class="subject-icon chem">⚗️</div><h3>Chemistry</h3><p>Units • Notes • Priority topics • PYQs</p><a href="#chemistry">Open subject →</a></article>
+<article class="subject"><div class="subject-icon math">∑</div><h3>Mathematics-I</h3><p>Concepts • Important questions • PYQs</p><a href="#coming">Coming next →</a></article>
+<article class="subject"><div class="subject-icon phys">⚡</div><h3>Physics</h3><p>Notes • Derivations • Important topics</p><a href="#coming">Coming next →</a></article>
+<article class="subject"><div class="subject-icon cs">⌘</div><h3>Programming / CSE</h3><p>Basics • Programs • Exam revision</p><a href="#coming">Coming next →</a></article>
+</div>
+</section>
 
-    <section id="notes" class="section notes-section">
-      <div class="section-heading">
-        <div><div class="eyebrow">EXAM READY</div><h2>Featured Notes</h2></div>
-        <div class="search"><span>🔍</span><input id="searchInput" type="search" placeholder="Search a topic..."></div>
-      </div>
-      <div id="notesGrid" class="notes-grid">
-        <article class="note-card" data-search="array data structures"><span class="mark">7 MARKS</span><h3>What is an Array?</h3><p>An array is a collection of elements of the same data type stored in continuous memory locations.</p><div class="note-footer"><span>📚 Data Structures</span><button onclick="openNote('Array')">Read Note</button></div></article>
-        <article class="note-card" data-search="java hello world basics"><span class="mark">BASICS</span><h3>Java: Hello World</h3><p>Understand the basic Java program structure, main method and output statement.</p><div class="note-footer"><span>☕ Java</span><button onclick="openNote('Java Hello World')">Read Note</button></div></article>
-        <article class="note-card" data-search="html boilerplate tags"><span class="mark">5 MARKS</span><h3>HTML Boilerplate</h3><p>Learn the basic structure of an HTML document and the purpose of common tags.</p><div class="note-footer"><span>🌐 HTML</span><button onclick="openNote('HTML Boilerplate')">Read Note</button></div></article>
-      </div>
-      <div id="noResults" class="no-results">No topic found. Try another search.</div>
-    </section>
+<section class="priority reveal">
+<div class="priority-copy"><span class="eyebrow">EXAM MODE</span><h2>Know what to study first.</h2><p>Every subject will have a clear priority system so students can focus their limited revision time where it matters most.</p></div>
+<div class="priority-list">
+<div><span class="badge red">🔥 VERY HIGH</span><b>Must Prepare</b><small>Strongly supported by syllabus + PYQ analysis.</small></div>
+<div><span class="badge yellow">⭐ IMPORTANT</span><b>Prepare</b><small>Frequently asked or strongly exam-relevant.</small></div>
+<div><span class="badge blue">📌 GOOD TO KNOW</span><b>Revise</b><small>Useful supporting topics.</small></div>
+</div>
+</section>
 
-    <section id="pyq" class="section pyq">
-      <div class="pyq-box">
-        <div class="eyebrow">LAST-MINUTE REVISION</div>
-        <h2>🎯 Important Questions</h2>
-        <p>We’ll collect unit-wise questions and mark them as 2, 5, 7 or 14-mark answers so revision becomes faster.</p>
-        <div class="question-row"><span>01</span><b>Explain an array with its types and applications.</b><em>7 Marks</em></div>
-        <div class="question-row"><span>02</span><b>Write a Java program to print “Hello World”.</b><em>5 Marks</em></div>
-        <div class="question-row"><span>03</span><b>Explain the basic structure of an HTML document.</b><em>5 Marks</em></div>
-      </div>
-    </section>
+<section class="section reveal" id="pyqs">
+<div class="section-head"><div><span class="eyebrow">PRACTICE</span><h2>Previous-year questions</h2></div></div>
+<div class="paper-row"><div><span>📄</span><b>Subject-wise papers</b><small>Organized by subject and year</small></div><div><span>🔁</span><b>Repeated questions</b><small>Patterns found across available papers</small></div><div><span>⏱️</span><b>Exam revision</b><small>Prioritize before the exam</small></div></div>
+</section>
 
-    <section id="team" class="section team-section">
-      <div class="eyebrow">BUILT TOGETHER</div>
-      <h2>Meet the StudyBuddy Team 💜</h2>
-      <p class="team-subtitle">Created with teamwork, notes and a lot of exam-season energy.</p>
-      <div class="team-grid">
-        <div class="person"><div class="avatar">K</div><h3>Keerti Bairagi</h3><p>Co-founder / Team</p></div>
-        <div class="person"><div class="avatar">S</div><h3>Shreya Patel</h3><p>Team</p></div>
-        <div class="person"><div class="avatar">S</div><h3>Shiva Parihar</h3><p>Team</p></div>
-        <div class="person"><div class="avatar">S</div><h3>Siddharth Yadav</h3><p>Team</p></div>
-      </div>
-    </section>
+<section class="chem-section reveal" id="chemistry">
+<div class="chem-top"><div><span class="eyebrow">SUBJECT 01</span><h2>🧪 Chemistry</h2><p>Exam-focused learning space. Actual notes and PYQs will be added after the syllabus and papers are provided.</p></div><span class="coming">CONTENT AREA</span></div>
+<div class="unit-grid">
+<div class="unit"><span>UNIT 01</span><h3>Notes & Concepts</h3><p>Easy explanations, definitions, formulas and diagrams.</p><button>Open Unit →</button></div>
+<div class="unit"><span>UNIT 02</span><h3>High-Priority Topics</h3><p>🔥 Topics selected from syllabus + previous papers.</p><button>View Priority List →</button></div>
+<div class="unit"><span>UNIT 03</span><h3>PYQs & Repeated</h3><p>📄 Previous papers and 🔁 recurring question patterns.</p><button>View Questions →</button></div>
+</div>
+</section>
 
-    <section class="cta">
-      <h2>Study together. Grow together. 🚀</h2>
-      <p>StudyBuddy is just getting started.</p>
-      <a class="btn primary" href="#subjects">Start Studying</a>
-    </section>
-  </main>
+<section class="section reveal" id="team">
+<div class="section-head"><div><span class="eyebrow">ABOUT US</span><h2>Built by students, for students.</h2></div></div>
+<p class="team-intro">StudyBuddy is being created to make first-year exam preparation simpler, more organized and less stressful.</p>
+<div class="team-grid">
+<div class="team-card"><img src="images/keerti-bairagi.png" alt="Keerti Bairagi"><b>Keerti Bairagi</b><small>Team</small></div>
+<div class="team-card"><img src="images/shreya-patel.jpg" alt="Shreya Patel"><b>Shreya Patel</b><small>Team</small></div>
+<div class="team-card"><div class="photo-placeholder">SP</div><b>Shiva Parihar</b><small>Photo coming soon</small></div>
+<div class="team-card"><img src="images/sidharth-yadav.jpg" alt="Sidharth Yadav"><b>Sidharth Yadav</b><small>Team</small></div>
+<div class="team-card"><img src="images/shivam-divan.jpg" alt="Shivam Divan"><b>Shivam Divan</b><small>Team</small></div>
+</div>
+</section>
 
-  <footer>
-    <div class="logo">📚 Study<span>Buddy</span></div>
-    <p>Exam-ready notes • Student-made • Student-friendly</p>
-    <p class="copyright">© 2026 StudyBuddy Team</p>
-  </footer>
-
-  <div id="modal" class="modal" aria-hidden="true">
-    <div class="modal-box">
-      <button class="close" onclick="closeModal()">×</button>
-      <div id="modalContent"></div>
-    </div>
-  </div>
-  <script src="script.js"></script>
-</body>
-</html>
+<section class="cta reveal"><div><span class="eyebrow">READY?</span><h2>Start with one topic.</h2><p>Small, focused preparation adds up.</p></div><a class="btn light" href="#subjects">Explore Subjects →</a></section>
+</main>
+<footer><div class="brand"><span class="brand-icon">✦</span><span>Study<span>Buddy</span></span></div><p>Exam-ready resources for first-year students.</p><small>© 2026 StudyBuddy • Built with curiosity ✦</small></footer>
+<div class="toast" id="toast">This area is ready for your final content.</div>
+<script src="script.js"></script>
+</body></html>
