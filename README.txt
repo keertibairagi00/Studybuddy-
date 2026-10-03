@@ -18,6 +18,7 @@ This is a static website, so it can be published on GitHub Pages, Netlify, Verce
 
 ## Team
 - Keerti Bairagi
+- Shivam Diwan
 - Shreya Patel
 - Shiva Parihar
 - Siddharth Yadav
